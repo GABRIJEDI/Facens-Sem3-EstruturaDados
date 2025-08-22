@@ -34,21 +34,27 @@ public class aula1Main {
                     int vetor1[] = new int[8];
                     int vetor2[] = new int[8];
                     int vetor3[] = new int[8];
+                    String valor = "";
 
                     JOptionPane.showMessageDialog(null, "Exercicio de criar 3 vetores e colocar numa matriz 3x8");
                     JOptionPane.showMessageDialog(null, "vamos inserir o valor do vetor 1:");
+                    valor = JOptionPane.showInputDialog("Insira o valor:");
                     for (int i = 0; i < 8; i++) {
-                        vetor1[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor:"));
+                        vetor1[i] = valor.charAt(i) - '0';
                         matriz.setVetor1(vetor1);
                     }
+                    valor = "";
                     JOptionPane.showMessageDialog(null, "vamos inserir o valor do vetor 2:");
+                    valor = JOptionPane.showInputDialog("Insira o valor:");
                     for (int i = 0; i < 8; i++) {
-                        vetor2[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor:"));
+                        vetor2[i] = valor.charAt(i) - '0';
                         matriz.setVetor2(vetor2);
                     }
+                    valor = "";
                     JOptionPane.showMessageDialog(null, "vamos inserir o valor do vetor 3:");
+                    valor = JOptionPane.showInputDialog("Insira o valor:");
                     for (int i = 0; i < 8; i++) {
-                        vetor3[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor:"));
+                        vetor3[i] = valor.charAt(i) - '0';
                         matriz.setVetor3(vetor3);
                     }
 

@@ -39,4 +39,3 @@ public class Decimal {
     JOptionPane.showMessageDialog(null, "Binário em 8 bits: " + mensagem);
 }
     }
-
