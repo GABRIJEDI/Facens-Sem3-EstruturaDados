@@ -9,7 +9,7 @@ public class aula1Main {
         TresVetores matriz = new TresVetores();
         Binario binario = new Binario();
         Decimal decimal = new Decimal();
-        Object[] interacoes = { "Inverter valores", "Matriz 8x3", "Binario para decimalo", "Decimal para binario",
+        Object[] interacoes = { "Inverter valores", "Matriz 8x3", "Binario para decimal", "Decimal para binario",
                 "Terminar exercicio" };
 
         JOptionPane.showMessageDialog(null, "Exercicio da Primeira aula" + //
@@ -22,11 +22,10 @@ public class aula1Main {
 
             switch (escolha) {
                 case 0:
-                    int vetor[] = new int[8];
-                    for (int i = 0; i < 8; i++) {
-                        vetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero: "));
-                    }
-                    vetores.setVetor(vetor);
+                    String numer = "";
+                    JOptionPane.showMessageDialog(null, "Exercicio de inverter o vetor");
+                    numer = JOptionPane.showInputDialog("Digite o numero (limite de 8)");
+                    vetores.criarVetor(numer);
                     vetores.inverter();
                     vetores.mostrarInvertido();
                     break;
@@ -36,6 +35,7 @@ public class aula1Main {
                     int vetor2[] = new int[8];
                     int vetor3[] = new int[8];
 
+                    JOptionPane.showMessageDialog(null, "Exercicio de criar 3 vetores e colocar numa matriz 3x8");
                     JOptionPane.showMessageDialog(null, "vamos inserir o valor do vetor 1:");
                     for (int i = 0; i < 8; i++) {
                         vetor1[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor:"));
@@ -57,6 +57,7 @@ public class aula1Main {
 
                 case 2:
                     String numero = "";
+                    JOptionPane.showMessageDialog(null, "Exercicio de converter um valor binario para decimal");
                     numero = JOptionPane.showInputDialog("Vamos digitar o numero:");
                     binario.setNumero(numero);
 
@@ -68,8 +69,8 @@ public class aula1Main {
                 case 3:
                     int num;
 
+                    JOptionPane.showMessageDialog(null, "Exercicio de converter um valor decimal para binario");
                     num = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor:"));
-
                     decimal.convertDecimal(num);
                     decimal.mostrarBinario();
 

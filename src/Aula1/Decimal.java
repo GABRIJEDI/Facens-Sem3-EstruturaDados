@@ -29,10 +29,14 @@ public class Decimal {
         }
     }
 
-    public void mostrarBinario() {
-        System.out.print("Binário em 8 bits: ");
-        for (int bit : decimal) {
-            JOptionPane.showMessageDialog(null, bit);
-        }
+   public void mostrarBinario() {
+    String mensagem = "";
+
+    for (int bit : decimal) {
+        mensagem = mensagem + bit + " ";
     }
+
+    JOptionPane.showMessageDialog(null, "Binário em 8 bits: " + mensagem);
 }
+    }
+

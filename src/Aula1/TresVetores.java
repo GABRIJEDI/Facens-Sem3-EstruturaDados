@@ -55,6 +55,6 @@ public class TresVetores {
     }
 
     public void mostrarMatriz() {
-        JOptionPane.showMessageDialog(null, Arrays.deepToString(matriz));
+        JOptionPane.showMessageDialog(null,"A matriz fica: "+ Arrays.deepToString(matriz));
     }
 }

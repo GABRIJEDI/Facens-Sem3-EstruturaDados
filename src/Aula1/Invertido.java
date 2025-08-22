@@ -16,11 +16,13 @@ public class Invertido {
         return vetorInvertido;
     }
 
-    public void setVetor(int[] vetor) {
-        if (vetor.length == 8) {
-            this.vetor = vetor;
+    public void criarVetor(String numero) {
+        if (numero.length() <= 8 && numero.length() > 0) {
+            for (int i = 0; i < vetor.length; i++) {
+                vetor[i] = numero.charAt(i) - '0';
+            }
         } else {
-            JOptionPane.showMessageDialog(null, "O vetor precisa ter 8 elementos.");
+            JOptionPane.showMessageDialog(null, "Numero Invalido");
         }
     }
 
@@ -31,6 +33,6 @@ public class Invertido {
     }
 
     public void mostrarInvertido() {
-        JOptionPane.showMessageDialog(null, Arrays.toString(vetorInvertido));
+        JOptionPane.showMessageDialog(null, "Os valores invertidos são: "+Arrays.toString(vetorInvertido));
     }
 }

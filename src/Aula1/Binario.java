@@ -39,6 +39,6 @@ public class Binario {
 
     public void mostrarDecimal() {
 
-        JOptionPane.showMessageDialog(null, numeroDecimal);
+        JOptionPane.showMessageDialog(null, "O numero fica:"+numeroDecimal);
     }
 }
