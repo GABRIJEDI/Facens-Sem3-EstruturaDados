@@ -1,5 +1,7 @@
 package Aula1;
 
+import javax.swing.JOptionPane;
+
 public class Decimal {
     private int[] decimal = new int[8];
     private int numero = 0;
@@ -30,8 +32,7 @@ public class Decimal {
     public void mostrarBinario() {
         System.out.print("Binário em 8 bits: ");
         for (int bit : decimal) {
-            System.out.print(bit);
+            JOptionPane.showMessageDialog(null, bit);
         }
-        System.out.println();
     }
 }

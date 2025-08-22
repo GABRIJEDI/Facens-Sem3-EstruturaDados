@@ -2,6 +2,8 @@ package Aula1;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class Invertido {
     private int[] vetor = new int[8];
     private int[] vetorInvertido = new int[8];
@@ -18,7 +20,7 @@ public class Invertido {
         if (vetor.length == 8) {
             this.vetor = vetor;
         } else {
-            System.out.println("O vetor precisa ter 8 elementos.");
+            JOptionPane.showMessageDialog(null, "O vetor precisa ter 8 elementos.");
         }
     }
 
@@ -29,6 +31,6 @@ public class Invertido {
     }
 
     public void mostrarInvertido() {
-        System.out.println(Arrays.toString(vetorInvertido));
+        JOptionPane.showMessageDialog(null, Arrays.toString(vetorInvertido));
     }
 }

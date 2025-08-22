@@ -2,6 +2,8 @@ package Aula1;
 
 import java.util.Arrays;
 
+import javax.swing.JOptionPane;
+
 public class TresVetores {
     private int[] vetor1 = new int[8];
     private int[] vetor2 = new int[8];
@@ -30,7 +32,7 @@ public class TresVetores {
             this.vetor1 = vetor1;
             matriz[0] = vetor1;
         } else {
-            System.out.println("O vetor precisa ter 8 elementos.");
+            JOptionPane.showMessageDialog(null, "O vetor precisa ter 8 elementos.");
         }
     }
 
@@ -39,7 +41,7 @@ public class TresVetores {
             this.vetor2 = vetor2;
             matriz[1] = vetor2;
         } else {
-            System.out.println("O vetor precisa ter 8 elementos.");
+            JOptionPane.showMessageDialog(null, "O vetor precisa ter 8 elementos.");;
         }
     }
 
@@ -48,11 +50,11 @@ public class TresVetores {
             this.vetor3 = vetor3;
             matriz[2] = vetor3;
         } else {
-            System.out.println("O vetor precisa ter 8 elementos.");
+            JOptionPane.showMessageDialog(null, "O vetor precisa ter 8 elementos.");
         }
     }
 
     public void mostrarMatriz() {
-        System.out.println(Arrays.deepToString(matriz));
+        JOptionPane.showMessageDialog(null, Arrays.deepToString(matriz));
     }
 }

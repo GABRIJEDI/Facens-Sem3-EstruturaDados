@@ -1,5 +1,7 @@
 package Aula1;
 
+import javax.swing.JOptionPane;
+
 public class Binario {
     private int[] binario = new int[8];
     private int numeroDecimal = 0;
@@ -31,11 +33,12 @@ public class Binario {
                 numeroDecimal += binario[i] * Math.pow(2, 7 - i);
             }
         } else {
-            System.out.println("Numero Invalido");
+            JOptionPane.showMessageDialog(null, "Numero Invalido");
         }
     }
 
     public void mostrarDecimal() {
-        System.out.println(numeroDecimal);
+
+        JOptionPane.showMessageDialog(null, numeroDecimal);
     }
 }
